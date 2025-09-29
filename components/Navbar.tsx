@@ -33,7 +33,7 @@ export default function Navbar() {
               </span>
             </div>
             <span className="text-sm sm:text-sm md:text-lg lg:text-xl font-bold bg-gradient-to-r from-emerald-600 via-green-500 to-teal-500 bg-clip-text text-transparent">
-              <span className="hidden sm:inline">ExpenseTracker AI</span>
+              <span className="hidden sm:inline">ExpenseTracker  </span>
               <span className="sm:hidden">ExpenseTracker</span>
             </span>
           </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-1">
           <Link
             href="/"
-            className="relative tex-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group"
+            className="relative text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 group"
           >
             <span className=" relative z-10">Home</span>
             <div className=" absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
@@ -50,7 +50,7 @@ export default function Navbar() {
 
           <Link
             href="/about"
-            className="relative tex-gray-700 dark:text-gray-300 hover:text-emerald-600
+            className="relative text-gray-700 dark:text-gray-300 hover:text-emerald-600
            dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50
             dark:hover:bg-emerald-900/20 group"
           >
@@ -63,7 +63,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className="relative tex-gray-700 dark:text-gray-300 hover:text-emerald-600
+            className="relative text-gray-700 dark:text-gray-300 hover:text-emerald-600
            dark:hover:text-emerald-400 px-3 lg:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 hover:bg-emerald-50/50
             dark:hover:bg-emerald-900/20 group"
           >
@@ -166,7 +166,7 @@ export default function Navbar() {
           {/* Mobile Navigation Links */}
           <Link
             href="/"
-            className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95"
+            className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-600 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 text-sm font-medium transition-all duration-200 active:scale-95"
             onClick={closeMobileMenu}
           >
             <span className="text-base">🏠</span>

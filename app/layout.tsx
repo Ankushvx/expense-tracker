@@ -27,11 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+    <ThemeProvider>
+      <ClerkThemeProvider>
+        <html lang="en" suppressHydrationWarning>
+          <head>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
               (function() {
                 const theme = localStorage.getItem('theme') || 
                   (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -40,20 +42,18 @@ export default function RootLayout({
                 }
               })();
             `,
-          }}
-        />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300`}
-      >
-        <ThemeProvider>
-       <ClerkThemeProvider>  
-           <Navbar /> 
+              }}
+            />
+          </head>
+          <body
+           className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300`}
+          >
+            <Navbar />
             {children}
             <Footer />
-       </ClerkThemeProvider>  
-        </ThemeProvider>
-      </body>
-    </html>
+          </body>
+        </html>
+      </ClerkThemeProvider>
+    </ThemeProvider>
   );
 }
